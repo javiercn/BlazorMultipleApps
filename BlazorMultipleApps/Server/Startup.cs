@@ -61,12 +61,12 @@ namespace BlazorMultipleApps.Server
             {
                 second.UseBlazorFrameworkFiles("/SecondApp");
                 second.UseStaticFiles();
-            
+
                 second.UseRouting();
                 second.UseEndpoints(endpoints =>
                 {
                     endpoints.MapControllers();
-                    endpoints.MapFallbackToFile("/SecondApp/{*path:nonfile}", "SecondApp/index.html");
+                    endpoints.MapFallbackToFile("SecondApp/{*path:nonfile}", "SecondApp/index.html");
                 });
             });
         }
