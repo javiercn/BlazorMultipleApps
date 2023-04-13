@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\MultipleAppsRazorClassLibrary\MultipleAppsRazorClassLibrary.csproj" />
     <ProjectReference Include="..\Shared\BlazorMultipleApps.Shared.csproj" />
   </ItemGroup>
 

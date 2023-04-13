@@ -44,6 +44,8 @@ namespace BlazorMultipleApps.Server
 
             app.UseHttpsRedirection();
 
+            app.UseStaticFiles();
+
             app.MapWhen(ctx => ctx.Request.Path.StartsWithSegments("/FirstApp"), first =>
             {
                 first.UseBlazorFrameworkFiles("/FirstApp");

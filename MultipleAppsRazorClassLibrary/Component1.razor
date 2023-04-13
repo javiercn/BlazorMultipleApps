@@ -1,0 +1,16 @@
+﻿@using Microsoft.JSInterop;
+@inject IJSRuntime JS;
+<div class="my-component">
+    This component is defined in the <strong>MultipleAppsRazorClassLibrary</strong> library.
+</div>
+
+@code {
+    IJSObjectReference? _module;
+    string? _text;
+
+    protected async override Task OnInitializedAsync()
+    {
+        _module = await JS.InvokeAsync<IJSObjectReference>("import", "/_content/MultipleAppsRazorClassLibrary/Component1.razor.js");
+        _text = await _module.InvokeAsync<string>("showPrompt");
+    }
+}

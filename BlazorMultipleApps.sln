@@ -1,15 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30008.11
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.33611.647
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorMultipleApps.Server", "BlazorMultipleApps\Server\BlazorMultipleApps.Server.csproj", "{6A8D9DEA-9FC7-4E7A-BC61-F2BC3811F57D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorMultipleApps.Server", "BlazorMultipleApps\Server\BlazorMultipleApps.Server.csproj", "{6A8D9DEA-9FC7-4E7A-BC61-F2BC3811F57D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorMultipleApps.Client", "BlazorMultipleApps\Client\BlazorMultipleApps.Client.csproj", "{E482F099-CEB6-4171-8064-475B9EF163C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorMultipleApps.Client", "BlazorMultipleApps\Client\BlazorMultipleApps.Client.csproj", "{E482F099-CEB6-4171-8064-475B9EF163C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorMultipleApps.Shared", "BlazorMultipleApps\Shared\BlazorMultipleApps.Shared.csproj", "{82024976-A926-433E-855C-1191FE98D59C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorMultipleApps.Shared", "BlazorMultipleApps\Shared\BlazorMultipleApps.Shared.csproj", "{82024976-A926-433E-855C-1191FE98D59C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SecondBlazorApp.Client", "BlazorMultipleApps\SecondClient\SecondBlazorApp.Client.csproj", "{F109A2F3-3004-4772-9FA9-DF11208278E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultipleAppsRazorClassLibrary", "MultipleAppsRazorClassLibrary\MultipleAppsRazorClassLibrary.csproj", "{74F2E1A1-0F6A-467B-9660-3BEF9E289BDE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{F109A2F3-3004-4772-9FA9-DF11208278E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F109A2F3-3004-4772-9FA9-DF11208278E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F109A2F3-3004-4772-9FA9-DF11208278E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74F2E1A1-0F6A-467B-9660-3BEF9E289BDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74F2E1A1-0F6A-467B-9660-3BEF9E289BDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74F2E1A1-0F6A-467B-9660-3BEF9E289BDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74F2E1A1-0F6A-467B-9660-3BEF9E289BDE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
