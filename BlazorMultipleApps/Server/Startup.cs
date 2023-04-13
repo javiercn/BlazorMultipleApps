@@ -62,6 +62,7 @@ namespace BlazorMultipleApps.Server
             app.MapWhen(ctx => ctx.Request.Path.StartsWithSegments("/SecondApp"), second =>
             {
                 second.UseBlazorFrameworkFiles("/SecondApp");
+                second.UsePathBase("/SecondApp");
                 second.UseStaticFiles();
 
                 second.UseRouting();
